@@ -1,0 +1,295 @@
+
+    *{
+    margin:0px;
+    padding:0px;
+     }
+     html{
+        scroll-behavior: smooth;
+     }
+
+    #logo img{
+        width:70px;
+        height:70px;
+        text-align: center;
+        margin:0px 50px;
+        padding:0px;
+    }
+
+    #navbar{
+        display:flex;
+        align-items: center;
+        position: relative;
+       
+    }
+
+    #navbar ul{
+        display:flex;
+    }
+
+    #navbar::before{
+        content:"";
+        background-color: navy;
+        position:absolute;
+        height:100%;
+        width:100%;
+        z-index: -1;
+    }
+
+    #navbar ul li{
+        list-style: none;
+        font-size: 15px;
+    }
+
+    #navbar ul li a{
+        font-size: 25px;
+        padding: 10px;
+        margin-left:50px;
+        margin-top: 8px;
+        margin-right:10px;
+        margin-bottom:2px;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        background: navy;
+       
+        color:antiquewhite;
+        border-radius: 2px;
+    }
+   
+    
+    #navbar ul li a:hover,#navbar ul li a:active{
+        background-color: bisque;
+        color:black;
+        border:3px solid teal;
+        border-radius: 6px;
+    }
+
+    #home{
+        display:flex;
+        flex-direction:column ;
+        padding:3px 200px;
+        justify-content: center;
+        align-items: center;
+        height:600px;
+    }
+
+    #home h1{
+        font-family: 'Kaushan Script', cursive;
+        font-size:90px;
+        text-align: center;
+        margin-top: -150px;
+        color:rgb(2, 2, 67);
+        animation-name:liki;
+        animation-timing-function: ease-in-out;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+    }
+    @keyframes liki{
+        from{
+            font-size: 90px;
+
+        }
+        to{
+            font-size: 110px;
+        }
+    }
+    #home h1:hover{
+        color:white;
+    }
+    #home h3{
+        font-family: 'Lumanosimo', cursive;
+        font-size:25px;
+        color:rgb(74, 3, 3);
+        background-color: lavender;
+        border-radius: 5px;
+        border:2px solid rgb(74, 3, 3);
+        padding:2px 2px;
+    
+    }
+    #home::before{
+        content:"";
+        background: url('https://i.pinimg.com/originals/e1/2a/8e/e12a8ea15dc3cf40777ea8d7b01142d2.jpg') no-repeat center center/cover;
+        position:absolute;
+        height:100%;
+        width:100%;
+        z-index:-5;
+        opacity: 0.75;
+    }
+
+    #services-container{
+        background-image: url('https://img.freepik.com/free-photo/ingredients-cooking-gray-concrete_127032-2082.jpg');
+        z-index: -10;
+        height: 850px;
+    }
+
+    #services{
+        margin-top:100px;
+        display:flex;
+        font-size: 15px;
+    }
+
+    .h-primary{
+        font-size: 3.8rem;
+        padding:12px;
+        text-align: center;
+        width:100%;
+        background-color:rgb(197, 226, 217);
+    }
+
+    .h-secondary{
+        display: flex;
+        position: relative;
+        font-size: 1.7rem;
+        padding:12px;
+        text-align:center;
+        margin-left: 65px;
+    }
+
+    #services .box{
+        border:6px solid rgb(81, 3, 3);
+        padding:34px;
+        margin:2px 55px;
+        background-color: rgb(243, 203, 189);
+        border-radius: 25px;
+        margin-bottom: 20px;
+    }
+
+    #services .box img{ 
+       height: 160px;
+       margin: auto;
+       display: block;
+    }
+
+    #services .box p{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-weight:lighter;
+        font-size: 18px;
+        text-emphasis: none;
+        text-align:start;
+    } 
+
+    #about-container{
+        width:100%;
+        height:100%;
+    }
+
+    .boww{
+        font-size: 3.8rem;
+        text-align: center;
+        margin-top: 120px;
+        justify-content: center;
+    }
+
+    #about img{
+        width:900px;
+        height:400px;
+        margin: 10px;
+        padding-left:275px;
+        justify-content: center;
+    }
+
+    .box{
+        border:4px solid black;
+        padding:10px 10px;
+        margin-top:0px;
+        margin-left: 2px;
+        background-color: rgb(222, 210, 194);
+        border-radius: 6px;
+        width:98%;
+        height:100%;
+    }
+    .box p{
+        font-family: 'Lora', serif;
+        font-size: 18px;
+        padding:20px 20px;
+        text-align: center;
+    }
+
+    #contact{
+        position: relative;
+    }
+
+    #contact::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        padding:20px 0px;
+        opacity: 0.9;
+        background: url('https://media.istockphoto.com/id/1311934969/photo/contact-us.webp?b=1&s=170667a&w=0&k=20&c=2sJEN1Hhg6heUi1ZxKs6pJDwcyLYXPc4pUGd3hEjOjE=') no-repeat center center/cover;
+    }
+
+    #contact-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    #contact-box input, 
+    #contact-box textarea{
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 9px;
+        font-size: 1.1rem;
+    } 
+
+    #contact-box form{
+        width: 40%;
+    }
+
+    #contact-box label{
+        font-size: 1.5rem;
+        font-family: 'Bree Serif', serif;
+        color: cornsilk;
+    }
+    
+    .branches-container{
+        height:500px;
+        padding:0px 100px;
+    }
+
+    #branches{
+        display: flex;
+        
+    }
+
+    .city{
+        padding:14px 23px;
+        height:25px;
+        width:100px;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 0px;
+        color:black;
+    }
+
+    #branches .box img{
+        height:150px;
+        width:180px;
+    }
+
+    #branches .box img:hover{
+        animation-name: yahoo;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes yahoo{
+        from{
+            height:150px;
+            width:180px;
+        }
+        to{
+        height:250px;
+        width:250px;
+       }
+    }
+
+    footer{
+        background-color: black;
+        color:white;
+        padding:9px 20px;
+    }
